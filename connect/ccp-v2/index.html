@@ -11,7 +11,7 @@
        console.log('>>> Event Origin: ' + event.origin);
        console.log('>>> Event Source: ' + event.source);
        if(window.parent){
-          window.parent.postMessage(event.data, '*');
+          //window.parent.postMessage(event.data, '*');
        }
    }, true);
    </script>  
