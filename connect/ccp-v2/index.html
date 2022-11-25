@@ -5,16 +5,7 @@
   <title>CCP Embeded into custom HTML</title>
   <meta charset="UTF-8">
   <script type="text/javascript" src="./lib/connect-streams-min.js"></script>
-  <script>
-    window.addEventListener("message", (event) => {
-       console.log('>>> Event Data: ' + event.data);
-       console.log('>>> Event Origin: ' + event.origin);
-       console.log('>>> Event Source: ' + event.source);
-       if(window.parent){
-          //window.parent.postMessage(event.data, '*');
-       }
-   }, true);
-   </script>  
+  
 </head>
 
 <body>
