@@ -9,7 +9,7 @@
     window.addEventListener("message", (event) => {
        console.log('>>>' + JSON.stringify(event));
        if(window.parent){
-          window.parent.postMessage(event, '*');
+          window.parent.postMessage(JSON.stringify(event), '*');
        }
    }, false);
    </script>  
