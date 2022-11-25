@@ -5,7 +5,14 @@
   <title>CCP Embeded into custom HTML</title>
   <meta charset="UTF-8">
   <script type="text/javascript" src="./lib/connect-streams-min.js"></script>
-
+  <script>
+    window.addEventListener("message", (event) => {
+       console.log('>>>' + JSON.stringify(event));
+       if(window.parent){
+          window.parent.postMessage(event, '*');
+       }
+   }, false);
+   </script>  
 </head>
 
 <body>
