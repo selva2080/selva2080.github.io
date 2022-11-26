@@ -5,13 +5,6 @@
   <title>CCP Embeded into custom HTML</title>
   <meta charset="UTF-8">
   <script type="text/javascript" src="./lib/connect-streams-min.js"></script>
-  <script>
-    window.addEventListener("message", (event) => {
-       if(event.source=='selva.awsapps.com'){
-          window.parent.postMessage(event.data, '*');
-       }
-   }, true);
-   </script>  
 </head>
 
 <body>
